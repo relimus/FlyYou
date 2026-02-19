@@ -4,8 +4,8 @@ import com.highcapable.yukihookapi.annotation.xposed.InjectYukiHookWithXposed
 import com.highcapable.yukihookapi.hook.factory.configs
 import com.highcapable.yukihookapi.hook.factory.encase
 import com.highcapable.yukihookapi.hook.xposed.proxy.IYukiHookXposedInit
-import io.relimus.flyyou.xposed.hooks.RemoveGamePanelGift
-import io.relimus.flyyou.xposed.hooks.SettingGMSActivity
+import io.relimus.flyyou.xposed.hooks.settings.SettingGMSActivity
+import io.relimus.flyyou.xposed.hooks.systemuitools.RemoveGamePanelGift
 
 @InjectYukiHookWithXposed(entryClassName = "Entry")
 object HookEntry : IYukiHookXposedInit {

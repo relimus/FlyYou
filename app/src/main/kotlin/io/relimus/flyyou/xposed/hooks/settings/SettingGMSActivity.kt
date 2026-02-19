@@ -1,4 +1,4 @@
-package io.relimus.flyyou.xposed.hooks
+package io.relimus.flyyou.xposed.hooks.settings
 
 import android.content.ComponentName
 import android.content.Context

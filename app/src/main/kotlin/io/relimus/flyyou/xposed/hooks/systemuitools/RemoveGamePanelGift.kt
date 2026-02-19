@@ -1,4 +1,4 @@
-package io.relimus.flyyou.xposed.hooks
+package io.relimus.flyyou.xposed.hooks.systemuitools
 
 import android.content.Context
 import android.view.View
