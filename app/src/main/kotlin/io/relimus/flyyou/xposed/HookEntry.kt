@@ -6,6 +6,7 @@ import com.highcapable.yukihookapi.hook.factory.encase
 import com.highcapable.yukihookapi.hook.xposed.proxy.IYukiHookXposedInit
 import io.relimus.flyyou.xposed.hooks.pkginstaller.DisableInstallCheck
 import io.relimus.flyyou.xposed.hooks.settings.SettingGMSActivity
+import io.relimus.flyyou.xposed.hooks.systemui.HideBatteryIcon
 import io.relimus.flyyou.xposed.hooks.systemuitools.RemoveGamePanelGift
 
 @InjectYukiHookWithXposed(entryClassName = "Entry")
@@ -16,6 +17,7 @@ object HookEntry : IYukiHookXposedInit {
         isEnableDataChannel = false
     }
     override fun onHook() = encase {
+        loadApp("com.android.systemui", HideBatteryIcon)
         loadApp("com.flyme.systemuitools", RemoveGamePanelGift)
         loadApp("com.android.settings", SettingGMSActivity)
         loadApp("com.android.packageinstaller", DisableInstallCheck)
