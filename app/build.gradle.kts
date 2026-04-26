@@ -41,6 +41,8 @@ android {
 }
 
 dependencies {
+    implementation(libs.androidx.core.ktx)
+
     compileOnly(libs.xposed.api)
     implementation(libs.yukihook.api)
     ksp(libs.yukihook.ksp.xposed)
