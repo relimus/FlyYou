@@ -45,7 +45,4 @@ dependencies {
     implementation(libs.yukihook.api)
     ksp(libs.yukihook.ksp.xposed)
     implementation(libs.kavaref.core)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
 }
